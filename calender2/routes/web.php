@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-// Route::get('/', 'CalendarController@index')->name('calendar.index'); //追加
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', 'CalendarController@show');//追加
 
 Auth::routes();
 
